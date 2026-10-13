@@ -1,0 +1,60 @@
+﻿@model IEnumerable<QuanLyQuanCafeWeb.Models.DanhMucMon>
+@{
+    ViewData["Title"] = "Quản lý danh mục món";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Quản lý danh mục món</h2>
+    <a asp-action="Create" class="btn btn-primary mb-3">Thêm danh mục mới</a>
+
+    <form asp-action="Index" method="get" class="row g-2 mb-3">
+        <div class="col-md-6">
+            <input type="text" name="tuKhoa" value="@ViewBag.TuKhoa" class="form-control" placeholder="Nhập tên danh mục cần tìm..." />
+        </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            <a asp-action="Index" class="btn btn-secondary">Xóa lọc</a>
+        </div>
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger">@TempData["Error"]</div>
+        }
+    </form>
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Mã danh mục</th>
+                <th>Tên danh mục</th>
+                <th>Thứ tự</th>
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var dm in Model)
+                {
+                    <tr>
+                        <td>@dm.MaDm</td>
+                        <td>@dm.TenDm</td>
+                        <td>@dm.ThuTu</td>
+                        <td>@(dm.TrangThai ? "Đang hoạt động" : "Ngừng hoạt động")</td>
+                        <td><a asp-action="Edit" asp-route-id="@dm.MaDm" class="btn btn-warning btn-sm">Sửa</a>
+                            <a asp-action="Delete" asp-route-id="@dm.MaDm" class="btn btn-warning btn-sm">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4" class="text-center">Không tìm thấy danh mục nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

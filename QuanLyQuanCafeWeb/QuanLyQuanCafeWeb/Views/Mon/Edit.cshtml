@@ -1,0 +1,52 @@
+﻿@model QuanLyQuanCafeWeb.Models.Mon
+@{
+    ViewData["Title"] = "Sửa món";
+}
+<div class="container mt-4">
+    <h2>Sửa món</h2>
+    <form asp-action="Edit" asp-route-id="@Model.MaMon" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="MaMon" />
+        <input type="hidden" asp-for="AnhMon" />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="TenMon" class="form-label"></label>
+            <input asp-for="TenMon"class="form-control" />
+            <span asp-validation-for="TenMon" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="MaDm" class="form-label">Danh mục</label>
+            <select asp-for="MaDm" class="form-select" asp-items="ViewBag.MaDm">
+                <option value="">-- Chọn danh mục --</option>   
+                </select>
+                <span asp-validation-for="MaDm" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ảnh hiện tại</label><br />
+            @if(!string.IsNullOrWhiteSpace(Model.AnhMon) )
+
+                {
+                    <img src="@Model.AnhMon" alt="@Model.TenMon" style="width: 120px;height:90px;object-fit:cover;border-radius:6px;"/>
+                }
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Chọn ảnh mới </label>
+            <input type="file" name="anhFile" accept=".jpg,.jpeg,.png,.webp" class="form-control"/>
+            <span class="text-danger">@Html.ValidationMessage("anhFile")</span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="MoTa" class="form-label">Mô tả</label>
+            <textarea asp-for="MoTa" class="form-control"></textarea>
+            <span asp-validation-for="MoTa" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="TrangThai" class="form-label">Trạng thái</label>
+            <select asp-for="TrangThai" class="form-select">
+                <option value="Còn bán">Còn bán</option>
+                <option value="Hết hàng">Hết hàng</option>
+                <option value="Ngừng bán">Ngừng bán</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

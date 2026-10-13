@@ -1,0 +1,94 @@
+﻿@model IEnumerable<QuanLyQuanCafeWeb.Models.Mon>
+
+@{
+    ViewData["Title"] = "Danh sách món";
+  
+
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Danh sách món</h2>
+    <form asp-action="Index" method="get" class="row g-2 mb-3">
+        <div class="col-md-5">
+            <input type="text" name="tuKhoa" value="@ViewBag.TuKhoa" class="form-control" placeholder="Nhập tên món cần tìm..." />
+        </div>
+        <div class="col-md-4">
+            <select name="maDm" class="form-select" asp-items="ViewBag.DanhMucFilter">
+                <option value="">Tất cả danh mục</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            <a asp-action="Index" class="btn btn-secondary">Xóa lọc</a>
+        </div>
+    </form>
+    @if(TempData["Success"]!=null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    <a asp-action="Create" class="btn btn-primary mb-3">Thêm món mới</a>
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Mã món</th>
+                <th>Tên món</th>
+                <th>Ảnh món</th>
+                <th>Danh mục</th>
+                <th>Giá bán</th>
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mon in Model)
+            {
+                <tr>
+                    <td>@mon.MaMon</td>
+                    <td>@mon.TenMon</td>
+                    <td>@if(!string.IsNullOrWhiteSpace(mon.AnhMon))
+                        {
+                            <img src="@mon.AnhMon" alt="@mon.TenMon" style="width: 90px; height: 70px; object-fit: cover;border-radius: 6px;" />
+                        }
+                        else
+                        {
+                            <span>Không có ảnh</span>
+                        }
+                    </td>
+                    <td>@mon.MaDm</td>
+                    <td>@mon.GiaBan.ToString("N0") đ</td>
+                    <td>@mon.TrangThai</td>
+                    <td><a asp-action="Edit" asp-route-id="@mon.MaMon" class="btn btn-warning btn-sm">Sửa</a>
+                        <a asp-action="Delete" asp-route-id="@mon.MaMon" class="btn btn-danger btn-sm">Xóa</a>     
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @{
+        int currentPage = ViewBag.CurrentPage ?? 1;
+        int totalPages = ViewBag.totalpages ?? 0;
+    }
+    @if(totalPages >1)
+    {
+        <nav aria-label="Phân trang">
+            <ul class="pagination justify-content-center">
+                @if(currentPage >1)
+                {
+                    <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@(currentPage-1)" asp-route-tuKhoa="@ViewBag.TuKhoa" asp-route-maDm="@ViewBag.MaDmChon">Trước</a></li>
+                }
+                @for(int i=1;i<=totalPages;i++)
+                {
+                    <li class="page-item @(i == currentPage ? "active" : "")"><a class="page-link" asp-action="Index" asp-route-page="@i" asp-route-tuKhoa="@ViewBag.TuKhoa" asp-route-maDm="@ViewBag.MaDmChon">@i</a></li>
+                }
+                @if (currentPage < totalPages)
+                {
+                    <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@(currentPage + 1)" asp-route-tuKhoa="@ViewBag.TuKhoa" asp-route-maDm="@ViewBag.MaDmChon">Tiếp</a></li>
+                }
+            </ul>
+        </nav>
+    }
+</div>

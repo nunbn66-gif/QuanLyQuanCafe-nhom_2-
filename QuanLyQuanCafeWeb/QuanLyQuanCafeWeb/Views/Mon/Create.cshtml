@@ -1,0 +1,52 @@
+﻿@model QuanLyQuanCafeWeb.Models.Mon
+@{
+    ViewData["Title"] = "Thêm món";
+}
+<div class="container mt-4">
+    <h2>Thêm món mới</h2>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        @* asp-validation-summary hiển thị danh sách lỗi *@
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            @* aspfor liên kết với thuộc tính trong model,  *@
+            <label asp-for="TenMon" class="form-label">Tên món</label>
+            <input asp-for="TenMon" class="form-control" />
+            <span asp-validation-for="TenMon"class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="MaDm" class="form-label">
+                Danh mục
+            </label>
+            <select asp-for="MaDm" asp-items="ViewBag.MaDm" class="form-select">
+                <option value="">-- Chọn danh mục --</option>
+            </select>
+            <span asp-validation-for="MaDm" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="GiaBan" class="form-label">Giá bán</label>
+            <input asp-for="GiaBan" type="number" min="0" step="0.01" class="form-control" />
+            <span asp-validation-for="GiaBan" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ảnh món</label>
+            <input type="file" name="anhFile" accept=".jpg,.jpeg,.png,.webp" class="form-control" />
+            <span class="text-danger">@Html.ValidationMessage("anhFile")</span>
+        </div>
+         <div class="mb-3">
+             <label asp-for="MoTa" class="form-label">Mô tả</label>
+             <textarea asp-for="MoTa" class="form-control"></textarea>
+         </div>
+         <div class="mb-3">
+             <label asp-for="TrangThai" class="form-label">Trạng thái</label>
+             <select asp-for="TrangThai" class="form-select">
+                 <option value="">-- Chọn trạng thái --</option>
+                 <option value="Còn bán">Còn bán</option>
+                <option value="Hết hàng">Hết hàng</option>
+                <option value="Ngừng bán">Ngừng bán</option>
+             </select>
+             <span asp-validation-for="TrangThai" class="text-danger"></span>
+         </div>
+         <button type="submit" class="btn btn-primary">Lưu món</button>
+         <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </form>
+</div>

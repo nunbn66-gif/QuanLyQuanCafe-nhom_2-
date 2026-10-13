@@ -1,0 +1,53 @@
+﻿@model IEnumerable<QuanLyQuanCafeWeb.Models.Ban>
+@{
+    ViewData["Title"] = "Quản lý bàn";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Quản lý bàn</h2>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    <a asp-action="Create" class="btn btn-primary mb-3">Thêm bàn mới</a>
+    <form asp-action="Index" method="get" class="row g-2 mb-3">
+        <div class="col-md-4">
+            <input type="text" name="tuKhoa" value="@ViewBag.TuKhoa" class="form-control" placeholder="Nhập tên bàn cần tìm..." />
+        </div>
+        <div class="col-md-3">
+            <select name="khuVuc" class="form-select" asp-items="ViewBag.KhuVucList">
+                <option value="">Tất cả khu vực</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select name="trangThai" class="form-select" asp-items="ViewBag.TrangThaiList">
+                <option value="">Tất cả trạng thái</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            <a asp-action="Index" class="btn btn-secondary mt-1">Xóa lọc</a>
+        </div>
+    </form>
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+            <tr><th>Mã bàn</th><th>Tên bàn</th><th>Khu vực</th><th>Số ghế</th><th>Trạng thái</th><th>Thao tác</th></tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var ban in Model)
+                {
+                    <tr><td>@ban.MaBan</td><td>@ban.TenBan</td><td>@ban.KhuVuc</td><td>@ban.SoGhe</td>
+                        <td>@ban.TrangThai</td><td><a asp-action="Edit" asp-route-id="@ban.MaBan" class="btn btn-warning btn-sm">Sửa</a>
+                            <a asp-action="Delete" asp-route-id="@ban.MaBan" class="btn btn-danger btn-sm">Xóa</a></td>
+                        
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="5" class="text-center">Không tìm thấy bàn nào.</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

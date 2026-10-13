@@ -1,0 +1,16 @@
+﻿@model QuanLyQuanCafeWeb.Models.DanhMucMon
+@{
+    ViewData["Title"] = "Xóa danh mục";
+}
+<div class="container mt-4">
+    <h2>Xác nhận xóa danh mục</h2>
+    <div class="alert alert-warning">Bạn có chắc chắn muốn xóa danh mục này không?</div>
+    <p><strong>Mã danh mục:</strong> @Model.MaDm</p>
+    <p><strong>Tên danh mục:</strong> @Model.TenDm</p>
+    <p><strong>Thứ tự:</strong> @Model.ThuTu</p>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" name="id" value="@Model.MaDm" />
+        <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

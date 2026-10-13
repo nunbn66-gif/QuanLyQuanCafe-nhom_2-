@@ -1,0 +1,18 @@
+﻿@model QuanLyQuanCafeWeb.Models.Ban
+@{
+    ViewData["Title"] = "Xóa bàn";
+}
+<div class="container mt-4">
+    <h2>Xác nhận xóa bàn</h2>
+    <div class="alert alert-warning">Bạn có chắc chắn muốn xóa bàn này không?</div>
+    <p><strong>Mã bàn:</strong> @Model.MaBan</p>
+    <p><strong>Tên bàn:</strong> @Model.TenBan</p>
+    <p><strong>Khu vực:</strong> @Model.KhuVuc</p>
+    <p><strong>Số ghế:</strong> @Model.SoGhe</p>
+    <p><strong>Trạng thái:</strong> @Model.TrangThai</p>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" name="id" value="@Model.MaBan" />
+        <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

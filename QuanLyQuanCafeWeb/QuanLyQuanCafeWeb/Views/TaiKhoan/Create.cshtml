@@ -1,0 +1,48 @@
+﻿@model QuanLyQuanCafeWeb.Models.TaiKhoan
+@{
+    ViewData["Title"] = "Thêm tài khoản";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Thêm tài khoản</h2>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="TenDangNhap" class="form-label">Tên đăng nhập</label>
+            <input asp-for="TenDangNhap" class="form-control" />
+            <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="HoTen" class="form-label">Họ tên</label>
+            <input asp-for="HoTen" class="form-control" />
+            <span asp-validation-for="HoTen" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mật khẩu</label>
+            <input type="password" name="matKhau" class="form-control" autocomplete="new-password" />
+            <span class="text-danger">@Html.ValidationMessage("matKhau")</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Xác nhận mật khẩu</label>
+            <input type="password" name="xacNhanMatKhau" class="form-control" autocomplete="new-password" />
+            <span class="text-danger">@Html.ValidationMessage("xacNhanMatKhau")</span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="VaiTro" class="form-label">Vai trò</label>
+            <select asp-for="VaiTro" class="form-select">
+                <option value="KhachHang">Khách hàng</option>
+                <option value="NhanVien">Nhân viên</option>
+                <option value="ChuQuan">Chủ quán</option>
+            </select>
+            <span asp-validation-for="VaiTro" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="TrangThai" class="form-label">Trạng thái</label>
+            <select asp-for="TrangThai" class="form-select">
+                <option value="true">Hoạt động</option>
+                <option value="false">Đã khóa</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu tài khoản</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+﻿@model QuanLyQuanCafeWeb.Models.DanhMucMon
+@{
+    ViewData["Title"] = "Thêm danh mục";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Thêm danh mục món</h2>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="TenDm" class="form-label">Tên danh mục</label>
+            <input asp-for="TenDm" class="form-control" />
+            <span asp-validation-for="TenDm" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ThuTu" class="form-label">Thứ tự hiển thị</label>
+            <input asp-for="ThuTu" type="number" min="0" class="form-control" />
+            <span asp-validation-for="ThuTu" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="TrangThai" class="form-label">Trạng thái</label>
+            <select asp-for="TrangThai" class="form-select">
+                <option value="true">Đang hoạt động</option>
+                <option value="false">Ngừng hoạt động</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu danh mục</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+﻿@model QuanLyQuanCafeWeb.Models.Ban
+@{
+    ViewData["Title"] = "Sửa bàn";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Sửa thông tin bàn</h2>
+    <form asp-action="Edit" asp-route-id="@Model.MaBan" method="post">
+        <input type="hidden" asp-for="MaBan" />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="TenBan" class="form-label">Tên bàn</label>
+            <input asp-for="TenBan" class="form-control" />
+            <span asp-validation-for="TenBan" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="KhuVuc" class="form-label">Khu vực</label>
+            <input asp-for="KhuVuc" class="form-control" />
+            <span asp-validation-for="KhuVuc" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SoGhe" class="form-label">Số ghế</label>
+            <input asp-for="SoGhe" type="number" min="1" class="form-control" />
+            <span asp-validation-for="SoGhe" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="TrangThai" class="form-label">Trạng thái</label>
+            <select asp-for="TrangThai" class="form-select">
+                <option value="Trống">Trống</option>
+                <option value="Có khách">Có khách</option>
+                <option value="Đã đặt">Đã đặt</option>
+                <option value="Bảo trì">Bảo trì</option>
+            </select>
+            <span asp-validation-for="TrangThai" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

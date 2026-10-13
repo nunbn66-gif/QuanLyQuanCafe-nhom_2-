@@ -1,0 +1,19 @@
+﻿@model QuanLyQuanCafeWeb.Models.Mon
+@{
+    ViewData["Title"] = "Xóa món";
+}
+<div class="container mt-4">
+    <h2>Xác nhận xóa món</h2>
+    <div class="alert alert-warning">Bạn có chắc chắn muốn xóa món này không?</div>
+    <p><strong>Tên món:</strong> @Model.TenMon</p>
+    <p><strong>Giá bán:</strong> @Model.GiaBan.ToString("N0") đ</p>
+    @if (!string.IsNullOrWhiteSpace(Model.AnhMon))
+    {
+        <img src="@Model.AnhMon" alt="@Model.TenMon" style="width:120px;height:90px;object-fit:cover;" />
+    }
+    <form asp-action="Delete" method="post">
+        <input type="hidden" name="id" value="@Model.MaMon" />
+        <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>
