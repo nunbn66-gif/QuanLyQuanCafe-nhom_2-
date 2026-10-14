@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using QuanLyQuanCafeWeb.Data;
+using QuanLyQuanCafeWeb.Filters;
+using QuanLyQuanCafeWeb.TempModels;
 using QuanLyQuanCafeWeb.Models;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 namespace QuanLyQuanCafeWeb.Controllers
 {
+    [SessionAuthorize("NhanVien", "ChuQuan")]
     public class MonController : Controller
     {
         private readonly CafeDbContext _context;
@@ -34,7 +37,22 @@ namespace QuanLyQuanCafeWeb.Controllers
             int totalItems = await query.CountAsync();
             int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
             if (totalPages > 0 && page > totalPages) page = totalPages;
-            var dsMon = await query.OrderBy(m => m.TenMon).Skip((page -1)*pageSize).Take(pageSize).ToListAsync();
+            var dsMon = await query.OrderBy(m => m.TenMon).Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+            var maMonsTrang = dsMon.Select(m => m.MaMon).ToList();
+            var thongKeDanhGia = await _context.Set<DanhGiaMon>()
+                .AsNoTracking()
+                .Where(d => maMonsTrang.Contains(d.MaMon))
+                .GroupBy(d => d.MaMon)
+                .Select(g => new
+                {
+                    MaMon = g.Key,
+                    DiemTrungBinh = g.Average(d => (decimal)d.SoSao),
+                    SoLuot = g.Count()
+                })
+                .ToListAsync();
+            ViewBag.DiemTrungBinh = thongKeDanhGia.ToDictionary(x => x.MaMon, x => x.DiemTrungBinh);
+            ViewBag.SoLuotDanhGia = thongKeDanhGia.ToDictionary(x => x.MaMon, x => x.SoLuot);
+
             var danhMucs = await _context.Set<DanhMucMon>().AsNoTracking().OrderBy(d => d.TenDm).ToListAsync();
             ViewBag.DanhMucFilter = new SelectList(danhMucs, "MaDm", "TenDm", maDm);
             ViewBag.TuKhoa = tuKhoa;

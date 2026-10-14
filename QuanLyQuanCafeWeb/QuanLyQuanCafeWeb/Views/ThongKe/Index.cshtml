@@ -1,0 +1,59 @@
+﻿@model QuanLyQuanCafeWeb.ViewModels.ThongKeDoanhThuVM
+@{
+    ViewData["Title"] = "Thống kê doanh thu";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Thống kê doanh thu</h2>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form asp-action="Index" method="get" class="row g-2 mb-4">
+        <div class="col-md-4">
+            <label class="form-label">Từ ngày</label>
+            <input type="date" name="tuNgay" value="@Model.TuNgay.ToString("yyyy-MM-dd")" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Đến ngày</label>
+            <input type="date" name="denNgay" value="@Model.DenNgay.ToString("yyyy-MM-dd")" class="form-control" />
+        </div>
+        <div class="col-md-4 d-flex align-items-end gap-2">
+            <button type="submit" class="btn btn-primary">Thống kê</button>
+            <a asp-action="Index" class="btn btn-secondary">Mặc định</a>
+        </div>
+    </form>
+    <div class="row g-3 mb-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Tổng doanh thu</h5>
+                    <h3 class="text-success">@Model.TongDoanhThu.ToString("N0") đ</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Số Order đã thanh toán</h5>
+                    <h3>@Model.SoDonThanhToan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4>Doanh thu theo giờ thanh toán</h4>
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr><th>Giờ thanh toán</th><th>Số Order</th><th>Doanh thu</th></tr>
+        </thead>
+        <tbody>
+            @if (Model.DoanhThuTheoGio.Any())
+            {
+                @foreach (var item in Model.DoanhThuTheoGio)
+                {
+                    <tr><td>@item.Gio.ToString("00"):00</td><td>@item.SoDon</td><td>@item.DoanhThu.ToString("N0") đ</td></tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="3" class="text-center">Không có Order đã thanh toán trong khoảng ngày này.</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

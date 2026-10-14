@@ -1,0 +1,30 @@
+﻿@model QuanLyQuanCafeWeb.ViewModels.KhuyenMaiEditVM
+@{
+    ViewData["Title"] = "Thiết lập khuyến mãi";
+}
+<div class="container mt-4" style="max-width:650px">
+    <h2 class="mb-3">Thiết lập khuyến mãi</h2>
+    <div class="alert alert-info">Món: <strong>@Model.TenMon</strong> — Giá gốc: <strong>@Model.GiaBan.ToString("N0") đ</strong></div>
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="MaMon" />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="PhanTramGiam" class="form-label">Phần trăm giảm giá</label>
+            <input asp-for="PhanTramGiam" type="number" min="0" max="100" step="0.01" class="form-control" />
+            <span asp-validation-for="PhanTramGiam" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="NgayBatDauKhuyenMai" class="form-label">Ngày giờ bắt đầu</label>
+            <input asp-for="NgayBatDauKhuyenMai" type="datetime-local" asp-format="{0:yyyy-MM-ddTHH:mm}" class="form-control" />
+            <span asp-validation-for="NgayBatDauKhuyenMai" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="NgayKetThucKhuyenMai" class="form-label">Ngày giờ kết thúc</label>
+            <input asp-for="NgayKetThucKhuyenMai" type="datetime-local" asp-format="{0:yyyy-MM-ddTHH:mm}" class="form-control" />
+            <span asp-validation-for="NgayKetThucKhuyenMai" class="text-danger"></span>
+        </div>
+        <p class="text-muted">Để trống thời gian bắt đầu hoặc kết thúc nghĩa là không giới hạn ở đầu hoặc cuối thời gian đó. Nhập mức giảm 0% để gỡ khuyến mãi.</p>
+        <button type="submit" class="btn btn-primary">Lưu khuyến mãi</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

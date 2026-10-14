@@ -1,0 +1,59 @@
+﻿@model QuanLyQuanCafeWeb.ViewModels.XemDanhGiaVM
+@{
+    ViewData["Title"] = "Đánh giá món";
+}
+<div class="container mt-4">
+    <h2>Đánh giá: @Model.TenMon</h2>
+    <div class="card mb-4">
+        <div class="card-body">
+            @if (Model.SoLuotDanhGia > 0)
+            {
+                var sao = (int)Math.Round(Model.DiemTrungBinh, MidpointRounding.AwayFromZero);
+                <h3 class="text-warning">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <text>@(i <= sao ? "★" : "☆")</text>
+                    }
+                </h3>
+                <h4>@Model.DiemTrungBinh.ToString("0.0")/5</h4>
+                <p class="text-muted">@Model.SoLuotDanhGia lượt đánh giá</p>
+            }
+            else
+            {
+                <p class="text-muted">Món này chưa có đánh giá.</p>
+            }
+        </div>
+    </div>
+    <h4>Nhận xét của khách hàng</h4>
+    @if (!Model.DanhGias.Any())
+    {
+        <div class="alert alert-info">Chưa có nhận xét nào.</div>
+    }
+    else
+    {
+        @foreach (var dg in Model.DanhGias)
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <strong>@dg.HoTen</strong>
+                    <small class="text-muted float-end">@dg.NgayDanhGia.ToString("dd/MM/yyyy HH:mm")</small>
+                    <div class="text-warning fs-5">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            <text>@(i <= dg.SoSao ? "★" : "☆")</text>
+                        }
+                    </div>
+                    @if (!string.IsNullOrWhiteSpace(dg.NoiDung))
+                    {
+                        <p class="mb-0">@dg.NoiDung</p>
+                    }
+                    else
+                    {
+                        <p class="text-muted mb-0">Khách hàng không để lại nhận xét.</p>
+                    }
+                </div>
+            </div>
+        }
+    }
+    <a asp-controller="Mon" asp-action="Index" class="btn btn-secondary">Quay lại danh sách món</a>
+</div>

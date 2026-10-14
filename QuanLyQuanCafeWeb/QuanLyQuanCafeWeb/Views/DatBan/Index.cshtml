@@ -1,0 +1,30 @@
+﻿@model IEnumerable<QuanLyQuanCafeWeb.Models.Order>
+@{
+    ViewData["Title"] = "Lịch đặt bàn";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Lịch đặt bàn</h2>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    <a asp-action="Create" class="btn btn-primary mb-3">Đặt bàn mới</a>
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr><th>Mã đặt bàn</th><th>Bàn</th><th>Người đặt</th><th>Ngày giờ</th><th>Số người</th><th>Ghi chú</th><th>Trạng thái</th></tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var o in Model)
+                {
+                    <tr><td>@o.MaOrder</td><td>@(o.MaBanNavigation?.TenBan ?? "Không có bàn")</td><td>@(o.MaKhNavigation?.HoTen ?? "Không xác định")</td><td>@o.GioDatBan?.ToString("dd/MM/yyyy HH:mm")</td><td>@o.SoNguoi</td><td>@o.GhiChu</td><td>@o.TrangThai</td></tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="7" class="text-center">Chưa có lịch đặt bàn.</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

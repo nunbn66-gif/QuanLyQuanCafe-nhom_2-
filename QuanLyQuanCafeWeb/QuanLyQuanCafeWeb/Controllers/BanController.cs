@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using QuanLyQuanCafeWeb.Data;
+using QuanLyQuanCafeWeb.Filters;
 using QuanLyQuanCafeWeb.Models;
 namespace QuanLyQuanCafeWeb.Controllers
 {
+    [SessionAuthorize("NhanVien", "ChuQuan")]
     public class BanController : Controller
     {
         private readonly CafeDbContext _context;

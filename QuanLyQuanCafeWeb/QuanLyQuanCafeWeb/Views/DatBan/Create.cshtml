@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Đặt bàn";
+}
+<div class="container mt-4" style="max-width:650px">
+    <h2 class="mb-3">Đặt bàn quán cà phê</h2>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label class="form-label">Chọn bàn</label>
+            <select name="maBan" asp-items="ViewBag.BanList" class="form-select">
+                <option value="">-- Chọn bàn --</option>
+            </select>
+            <span class="text-danger">@Html.ValidationMessage("maBan")</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ngày giờ đặt</label>
+            <input type="datetime-local" name="gioDatBan" class="form-control" value="@DateTime.Now.AddHours(1).ToString("yyyy-MM-ddTHH:mm")" required />
+            <span class="text-danger">@Html.ValidationMessage("gioDatBan")</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Số người</label>
+            <input type="number" name="soNguoi" min="1" value="2" class="form-control" required />
+            <span class="text-danger">@Html.ValidationMessage("soNguoi")</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ghi chú</label>
+            <textarea name="ghiChu" class="form-control" rows="3" placeholder="Ví dụ: cần ghế trẻ em"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Xác nhận đặt bàn</button>
+        <a asp-action="Index" class="btn btn-secondary">Lịch đặt bàn</a>
+    </form>
+</div>

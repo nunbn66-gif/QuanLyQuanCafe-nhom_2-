@@ -1,0 +1,93 @@
+﻿@using Microsoft.AspNetCore.Http
+@model IEnumerable<QuanLyQuanCafeWeb.TempModels.CaLamViec>
+@{
+    ViewData["Title"] = "Quản lý ca làm việc";
+    var vaiTro = Context.Session.GetString("VaiTro");
+}
+<div class="container mt-4">
+    <h2>Quản lý ca làm việc</h2>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    @if (vaiTro == "ChuQuan")
+    {
+        <a asp-action="Create" class="btn btn-primary mb-3">Phân công ca mới</a>
+    }
+    <form asp-action="Index" method="get" class="row g-2 mb-3">
+        <div class="col-md-4">
+            <input type="date" name="ngayLam" value="@ViewBag.NgayLam" class="form-control" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-secondary">Lọc ngày</button>
+            <a asp-action="Index" class="btn btn-outline-secondary">Xóa lọc</a>
+        </div>
+    </form>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>Mã ca</th>
+                    <th>Mã nhân viên</th>
+                    <th>Ngày làm</th>
+                    <th>Bắt đầu</th>
+                    <th>Kết thúc</th>
+                    <th>Trạng thái</th>
+                    <th>Ghi chú</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ca in Model)
+                {
+                    <tr>
+                        <td>@ca.MaCa</td>
+                        <td>@ca.MaTk</td>
+                        <td>@ca.NgayLam.ToString("dd/MM/yyyy")</td>
+                        <td>@ca.GioBatDau.ToString("HH:mm")</td>
+                        <td>@ca.GioKetThuc.ToString("HH:mm")</td>
+                        <td>@ca.TrangThai</td>
+                        <td>@ca.GhiChu</td>
+                        @if (vaiTro == "ChuQuan")
+                        {
+
+                            <td>
+                                @if (ca.NgayLam == DateOnly.FromDateTime(DateTime.Today) && ca.TrangThai == "Đã phân công")
+                                {
+                                    <form asp-action="BatDau" asp-route-id="@ca.MaCa" method="post" class="d-inline">
+                                        <button type="submit" class="btn btn-sm btn-success">Bắt đầu ca</button>
+                                    </form>
+                                }
+                                @if (ca.NgayLam == DateOnly.FromDateTime(DateTime.Today) && ca.TrangThai == "Đang làm")
+                                {
+                                    <form asp-action="HoanThanh" asp-route-id="@ca.MaCa" method="post" class="d-inline" onsubmit="return confirm('Xác nhận hoàn thành ca làm?');">
+                                        <button type="submit" class="btn btn-sm btn-primary">Kết thúc ca</button>
+                                    </form>
+                                }
+                                @if (vaiTro == "ChuQuan" && ca.TrangThai != "Đã hủy")
+                                {
+                                    <a asp-action="Edit" asp-route-id="@ca.MaCa" class="btn btn-sm btn-warning">Sửa</a>
+                                    @if (ca.TrangThai != "Hoàn thành")
+                                    {
+                                        <form asp-action="Huy" asp-route-id="@ca.MaCa" method="post" class="d-inline" onsubmit="return confirm('Bạn chắc chắn muốn hủy ca này?');">
+                                            <button type="submit" class="btn btn-sm btn-danger">Hủy ca</button>
+                                        </form>
+                                    }
+                                }
+                            </td>
+
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (!Model.Any())
+    {
+        <p class="text-muted">Chưa có ca làm việc nào.</p>
+    }
+</div>

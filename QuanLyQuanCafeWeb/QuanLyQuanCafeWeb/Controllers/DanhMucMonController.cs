@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using QuanLyQuanCafeWeb.Data;
+using QuanLyQuanCafeWeb.Filters;
 using QuanLyQuanCafeWeb.Models;
 namespace QuanLyQuanCafeWeb.Controllers
 {
+    [SessionAuthorize("ChuQuan")]
     public class DanhMucMonController : Controller
     {
         private readonly CafeDbContext _context;

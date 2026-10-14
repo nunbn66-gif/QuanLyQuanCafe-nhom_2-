@@ -29,6 +29,37 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Mon" asp-action="Index">Món</a>
                         </li>
+                        @if (Context.Session.GetInt32("MaTK") != null)
+                        {
+                            <li class="nav-item"><span class="nav-link">@Context.Session.GetString("HoTen")</span></li>
+                            <li class="nav-item">
+                                <form asp-controller="Auth" asp-action="Logout" method="post" class="d-inline">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="nav-link btn btn-link">Đăng xuất</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item"><a class="nav-link text-dark" asp-controller="Auth" asp-action="Login">Đăng nhập</a></li>
+                        }
+                        <li class="nav-item"><a class="nav-link text-dark" asp-controller="Auth" asp-action="Register">Đăng kí</a></li>
+                        @if (Context.Session.GetString("VaiTro") == "ChuQuan")
+                        {
+                            <li class="nav-item"><a class="nav-link" asp-controller="KhuyenMai" asp-action="Index">Khuyến mãi</a></li>
+                        }
+                        @if (Context.Session.GetString("VaiTro") == "ChuQuan" || Context.Session.GetString("VaiTro") == "NhanVien")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="CaLamViec" asp-action="Index">Ca làm việc</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetString("VaiTro") == "KhachHang")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="DanhGiaMon" asp-action="Index">Đánh giá món</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

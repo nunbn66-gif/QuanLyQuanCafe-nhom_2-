@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Thêm món vào Order";
+}
+<div class="container mt-4">
+    <h2>Thêm món vào Order #@ViewBag.MaOrder</h2>
+    <form asp-action="AddMon" asp-route-id="@ViewBag.MaOrder" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label class="form-label">Chọn món</label>
+            <select name="maMon" asp-items="ViewBag.MonList" class="form-select">
+                <option value="">-- Chọn món --</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Số lượng</label>
+            <input type="number" name="soLuong" value="1" min="1" class="form-control" />
+            <span class="text-danger">@Html.ValidationMessage("soLuong")</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ghi chú</label>
+            <input type="text" name="ghiChu" class="form-control" placeholder="Ví dụ: ít đường, ít đá" />
+        </div>
+        <button type="submit" class="btn btn-primary">Thêm vào Order</button>
+        <a asp-action="Details" asp-route-id="@ViewBag.MaOrder" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

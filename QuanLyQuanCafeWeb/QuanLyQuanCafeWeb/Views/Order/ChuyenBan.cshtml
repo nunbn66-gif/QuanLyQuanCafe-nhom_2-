@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Chuyển bàn";
+}
+<div class="container mt-4" style="max-width:600px">
+    <h2 class="mb-3">Chuyển bàn cho Order #@ViewBag.MaOrder</h2>
+    <div class="alert alert-info">Bàn hiện tại: <strong>@ViewBag.TenBanHienTai</strong></div>
+    <form asp-action="ChuyenBan" asp-route-id="@ViewBag.MaOrder" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="id" value="@ViewBag.MaOrder" />
+        <div class="mb-3">
+            <label class="form-label">Chọn bàn mới</label>
+            <select name="maBanMoi" asp-items="ViewBag.BanList" class="form-select" required>
+                <option value="">-- Chọn bàn còn trống --</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Xác nhận chuyển bàn</button>
+        <a asp-action="Details" asp-route-id="@ViewBag.MaOrder" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

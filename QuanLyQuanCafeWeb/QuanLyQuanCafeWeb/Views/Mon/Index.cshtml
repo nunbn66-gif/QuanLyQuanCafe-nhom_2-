@@ -2,7 +2,8 @@
 
 @{
     ViewData["Title"] = "Danh sách món";
-  
+    var diemTrungBinh = ViewBag.DiemTrungBinh as Dictionary<int, decimal> ?? new Dictionary<int, decimal>();
+    var soLuotDanhGia = ViewBag.SoLuotDanhGia as Dictionary<int, int> ?? new Dictionary<int, int>();
 
 }
 
@@ -39,7 +40,9 @@
                 <th>Ảnh món</th>
                 <th>Danh mục</th>
                 <th>Giá bán</th>
+                <th>Đánh giá</th>
                 <th>Trạng thái</th>
+
                 <th>Thao tác</th>
             </tr>
         </thead>
@@ -60,6 +63,38 @@
                     </td>
                     <td>@mon.MaDm</td>
                     <td>@mon.GiaBan.ToString("N0") đ</td>
+                    <td>
+                        @if (diemTrungBinh.TryGetValue(mon.MaMon, out var diem) && soLuotDanhGia.TryGetValue(mon.MaMon, out var soLuot))
+                        {
+                            var saoHienThi = (int)Math.Round(diem, MidpointRounding.AwayFromZero);
+                            <div class="text-warning" style="font-size: 18px; white-space: nowrap;">
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    if (i <= saoHienThi)
+                                    {
+                                        <text>★</text>
+                                    }
+                                    else
+                                    {
+                                        <text>☆</text>
+                                    }
+                                }
+                            </div>
+                            <small>@diem.ToString("0.0")/5 (@soLuot lượt)</small>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Chưa có đánh giá</span>
+                        }
+                        <div class="mt-2">
+                            <a asp-controller="XemDanhGia"
+                               asp-action="Index"
+                               asp-route-maMon="@mon.MaMon"
+                               class="btn btn-sm btn-outline-primary">
+                                Xem nhận xét
+                            </a>
+                        </div>
+                    </td>
                     <td>@mon.TrangThai</td>
                     <td><a asp-action="Edit" asp-route-id="@mon.MaMon" class="btn btn-warning btn-sm">Sửa</a>
                         <a asp-action="Delete" asp-route-id="@mon.MaMon" class="btn btn-danger btn-sm">Xóa</a>     

@@ -1,0 +1,28 @@
+﻿@model QuanLyQuanCafeWeb.Models.Order
+@{
+    ViewData["Title"] = "Thanh toán Order";
+}
+<div class="container mt-4">
+    <h2>Thanh toán Order #@Model.MaOrder</h2>
+    <p><strong>Loại Order:</strong> @Model.LoaiOrder</p>
+    <p><strong>Bàn:</strong> @(Model.MaBanNavigation?.TenBan ?? "Không có bàn")</p>
+    <p><strong>Khách hàng:</strong> @(Model.MaKhNavigation?.HoTen ?? "Khách vãng lai")</p>
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr><th>Tên món</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var ct in Model.ChiTietOrders)
+            {
+                <tr><td>@(ct.MaMonNavigation?.TenMon ?? "Không xác định")</td><td>@ct.SoLuong</td><td>@ct.DonGia.ToString("N0") đ</td><td>@((ct.SoLuong * ct.DonGia).ToString("N0")) đ</td></tr>
+            }
+        </tbody>
+    </table>
+    <h4 class="text-end">Tổng thanh toán: @Model.ChiTietOrders.Sum(ct => ct.SoLuong * ct.DonGia).ToString("N0") đ</h4>
+    <div class="alert alert-warning">Vui lòng kiểm tra lại các món và tổng tiền trước khi xác nhận thanh toán.</div>
+    <form asp-action="ThanhToan" asp-route-id="@Model.MaOrder" method="post" onsubmit="return confirm('Xác nhận thanh toán Order này?');">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-success">Xác nhận thanh toán</button>
+        <a asp-action="Details" asp-route-id="@Model.MaOrder" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

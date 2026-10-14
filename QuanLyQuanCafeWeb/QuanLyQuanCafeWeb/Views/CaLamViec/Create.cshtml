@@ -1,0 +1,39 @@
+﻿@model QuanLyQuanCafeWeb.ViewModels.CaLamViecFormVM
+@{
+    ViewData["Title"] = "Phân công ca làm";
+}
+<div class="container mt-4">
+    <h2>Phân công ca làm</h2>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="MaTk" class="form-label">Nhân viên</label>
+            <select asp-for="MaTk" asp-items="ViewBag.NhanVienList" class="form-select">
+                <option value="0">-- Chọn nhân viên --</option>
+            </select>
+            <span asp-validation-for="MaTk" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="NgayLam" class="form-label">Ngày làm</label>
+            <input asp-for="NgayLam" type="date" class="form-control" />
+            <span asp-validation-for="NgayLam" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="GioBatDau" class="form-label">Giờ bắt đầu</label>
+            <input asp-for="GioBatDau" type="time" class="form-control" />
+            <span asp-validation-for="GioBatDau" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="GioKetThuc" class="form-label">Giờ kết thúc</label>
+            <input asp-for="GioKetThuc" type="time" class="form-control" />
+            <span asp-validation-for="GioKetThuc" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="GhiChu" class="form-label">Ghi chú</label>
+            <textarea asp-for="GhiChu" class="form-control" rows="3"></textarea>
+            <span asp-validation-for="GhiChu" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu phân công</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

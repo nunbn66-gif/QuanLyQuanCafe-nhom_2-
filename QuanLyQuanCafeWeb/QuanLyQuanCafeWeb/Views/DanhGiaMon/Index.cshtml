@@ -1,0 +1,68 @@
+﻿@model List<QuanLyQuanCafeWeb.ViewModels.DanhGiaMonItemVM>
+@{
+    ViewData["Title"] = "Đánh giá món ăn";
+}
+<div class="container mt-4">
+    <h2>Đánh giá món ăn</h2>
+    <p class="text-muted">Bạn có thể đánh giá các món thuộc đơn hàng đã thanh toán.</p>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">Bạn chưa có món nào trong đơn hàng đã thanh toán để đánh giá.</div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.TenMon</h5>
+                            @if (item.SoSao.HasValue)
+                            {
+                                <p class="text-success">Đã đánh giá @item.SoSao/5 sao</p>
+                                <small class="text-muted">Cập nhật lần cuối: @item.NgayDanhGia?.ToString("dd/MM/yyyy HH:mm")</small>
+                            }
+                            <form asp-action="Luu" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="maMon" value="@item.MaMon" />
+                                <div class="mb-3 mt-2">
+                                    <label class="form-label">Số sao</label>
+                                    <select name="soSao" class="form-select" required>
+                                        <option value="">-- Chọn số sao --</option>
+                                        @for (int sao = 1; sao <= 5; sao++)
+                                        {
+                                            if (item.SoSao == sao)
+                                            {
+                                                <option value="@sao" selected>@sao sao</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@sao">@sao sao</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nhận xét</label>
+                                    <textarea name="noiDung" maxlength="500" rows="3" class="form-control" placeholder="Chia sẻ nhận xét của bạn...">@item.NoiDung</textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    @(item.SoSao.HasValue ? "Cập nhật đánh giá" : "Gửi đánh giá")
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

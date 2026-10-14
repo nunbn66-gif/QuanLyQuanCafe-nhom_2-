@@ -1,0 +1,77 @@
+﻿@model QuanLyQuanCafeWeb.Models.Order
+@{
+    ViewData["Title"] = "Chi tiết Order";
+}
+<div class="container mt-4">
+    <h2>Chi tiết Order #@Model.MaOrder</h2>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    <p><strong>Loại Order:</strong> @Model.LoaiOrder</p>
+    <p><strong>Bàn:</strong> @(Model.MaBanNavigation?.TenBan ?? "Không có bàn")</p>
+    <p><strong>Khách hàng:</strong> @(Model.MaKhNavigation?.HoTen ?? "Khách vãng lai")</p>
+    <p><strong>Thời gian:</strong> @Model.GioVao.ToString("dd/MM/yyyy HH:mm")</p>
+    <p><strong>Trạng thái:</strong> @Model.TrangThai</p>
+    <a asp-action="AddMon" asp-route-id="@Model.MaOrder" class="btn btn-primary mb-3">Thêm món</a>
+    @if (Model.LoaiOrder == "Tại chỗ" && Model.MaBan.HasValue && !Model.GioDatBan.HasValue && Model.TrangThai != "Đã thanh toán" && Model.TrangThai != "Đã hủy")
+    {
+        <a asp-action="ChuyenBan" asp-route-id="@Model.MaOrder" class="btn btn-warning mb-3">Chuyển bàn</a>
+        <a asp-action="GopBan" asp-route-id="@Model.MaOrder" class="btn btn-info mb-3">Gộp bàn</a>
+    }
+    @if (Model.TrangThai != "Đã thanh toán" && Model.TrangThai != "Đã hủy")
+    {
+        <a asp-action="ThanhToan" asp-route-id="@Model.MaOrder" class="btn btn-success mb-3">Thanh toán</a>
+    }
+    @if (Model.TrangThai == "Đã thanh toán")
+    {
+        <a asp-action="HoaDon" asp-route-id="@Model.MaOrder" class="btn btn-dark mb-3">Xem hóa đơn</a>
+    }
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+            <tr><th>Tên món</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th><th>Ghi chú</th><th>Thao tác</th></tr>
+        </thead>
+        <tbody>
+            @if (Model.ChiTietOrders.Any())
+            {
+                @foreach (var ct in Model.ChiTietOrders)
+                {
+                    <tr>
+                        <td>@(ct.MaMonNavigation?.TenMon ?? "Không xác định")</td>
+                        <td>
+                            <form asp-action="CapNhatSoLuong" method="post" class="d-flex gap-2">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.MaOrder" />
+                                <input type="hidden" name="maMon" value="@ct.MaMon" />
+                                <input type="number" name="soLuong" value="@ct.SoLuong" min="1" class="form-control" style="width:90px" />
+                                <button type="submit" class="btn btn-primary btn-sm">Cập nhật</button>
+                            </form>
+                        </td>
+                        <td>@ct.DonGia.ToString("N0") đ</td>
+                        <td>@((ct.SoLuong * ct.DonGia).ToString("N0")) đ</td>
+                        <td>@ct.GhiChu</td>
+                        <td>
+                            <form asp-action="XoaMon" method="post" onsubmit="return confirm('Bạn có chắc muốn xóa món này khỏi Order?');">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.MaOrder" />
+                                <input type="hidden" name="maMon" value="@ct.MaMon" />
+                                <button type="submit" class="btn btn-danger btn-sm">Xóa món</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="6" class="text-center">Order chưa có món nào.</td></tr>
+            }
+        </tbody>
+    </table>
+    <h4 class="text-end">Tổng tiền: @Model.TongTien.ToString("N0") đ</h4>
+    <h4 class="text-end">Tổng tiền: @Model.TongTien.ToString("N0") đ</h4>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+</div>

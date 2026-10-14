@@ -1,0 +1,55 @@
+﻿@model IEnumerable<QuanLyQuanCafeWeb.ViewModels.OrderIndexVM>
+@{
+    ViewData["Title"] = "Quản lý Order";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Quản lý Order</h2>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    <a asp-action="Create" class="btn btn-primary mb-3">Tạo Order mới</a>
+    <form asp-action="Index" method="get" class="row g-2 mb-3">
+        <div class="col-md-3">
+            <input type="number" min="1" name="maOrder" value="@ViewBag.MaOrder" class="form-control" placeholder="Mã Order" />
+        </div>
+        <div class="col-md-3">
+            <select name="loaiOrder" asp-items="ViewBag.LoaiOrderList" class="form-select">
+                <option value="">Tất cả loại Order</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select name="trangThai" asp-items="ViewBag.TrangThaiList" class="form-select">
+                <option value="">Tất cả trạng thái</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            <a asp-action="Index" class="btn btn-secondary">Xóa lọc</a>
+        </div>
+    </form>
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+            <tr><th>Mã Order</th><th>Loại Order</th><th>Bàn</th><th>Khách hàng</th><th>Giờ vào</th><th>Tổng tiền</th><th>Trạng thái</th><th>Thao tác</th></tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var o in Model)
+                {
+                    <tr><td>@o.MaOrder</td><td>@o.LoaiOrder</td><td>@(o.TenBan ?? "Không có bàn")</td><td>@(o.TenKhachHang ?? "Khách vãng lai")</td><td>@o.GioVao.ToString("dd/MM/yyyy HH:mm")</td><td>@o.TongTien.ToString("N0") đ</td><td>@o.TrangThai</td>
+                        <td><a asp-action="Details" asp-route-id="@o.MaOrder" class="btn btn-primary btn-sm">Chi tiết</a></td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="7" class="text-center">Không tìm thấy Order nào.</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

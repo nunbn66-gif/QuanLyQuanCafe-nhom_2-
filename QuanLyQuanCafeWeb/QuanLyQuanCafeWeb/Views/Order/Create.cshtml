@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Tạo Order";
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Tạo Order mới</h2>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label class="form-label">Loại Order</label>
+            <select name="loaiOrder" class="form-select">
+                <option value="">-- Chọn loại Order --</option>
+                <option value="Tại chỗ">Tại chỗ</option>
+                <option value="Mang đi">Mang đi</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Bàn (chỉ chọn khi dùng tại chỗ)</label>
+            <select name="maBan" asp-items="ViewBag.BanList" class="form-select">
+                <option value="">-- Không chọn bàn --</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Khách hàng thành viên</label>
+            <select name="maKh" asp-items="ViewBag.KhachHangList" class="form-select">
+                <option value="">Khách vãng lai / không tích điểm</option>
+            </select>
+            <span class="text-danger">@Html.ValidationMessage("maKh")</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Tạo Order</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

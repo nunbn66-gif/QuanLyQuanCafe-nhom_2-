@@ -1,0 +1,49 @@
+﻿@model QuanLyQuanCafeWeb.Models.Order
+@{
+    ViewData["Title"] = "Hóa đơn";
+}
+<style>
+    @@media print {
+        .no-print {
+            display: none !important;
+        }
+
+        body {
+            background: white !important;
+        }
+    }
+</style>
+<div class="container mt-4">
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success no-print">@TempData["Success"]</div>
+    }
+    <div class="text-center mb-4">
+        <h2>HÓA ĐƠN THANH TOÁN</h2>
+        <h4>QUÁN CÀ PHÊ</h4>
+        <p>Order #@Model.MaOrder</p>
+    </div>
+    <p><strong>Loại Order:</strong> @Model.LoaiOrder</p>
+    <p><strong>Bàn:</strong> @(Model.MaBanNavigation?.TenBan ?? "Mang đi / Không có bàn")</p>
+    <p><strong>Khách hàng:</strong> @(Model.MaKhNavigation?.HoTen ?? "Khách vãng lai")</p>
+    <p><strong>Thời gian vào:</strong> @Model.GioVao.ToString("dd/MM/yyyy HH:mm")</p>
+    <p><strong>Thời gian thanh toán:</strong> @Model.GioThanhToan?.ToString("dd/MM/yyyy HH:mm")</p>
+    <p><strong>Trạng thái:</strong> @Model.TrangThai</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr><th>Tên món</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var ct in Model.ChiTietOrders)
+            {
+                <tr><td>@(ct.MaMonNavigation?.TenMon ?? "Không xác định")</td><td>@ct.SoLuong</td><td>@ct.DonGia.ToString("N0") đ</td><td>@((ct.SoLuong * ct.DonGia).ToString("N0")) đ</td></tr>
+            }
+        </tbody>
+    </table>
+    <h3 class="text-end">Tổng tiền: @Model.TongTien.ToString("N0") đ</h3>
+    <p class="text-center mt-4">Cảm ơn quý khách và hẹn gặp lại!</p>
+    <div class="no-print d-flex gap-2">
+        <button type="button" onclick="window.print()" class="btn btn-primary">In hóa đơn</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách Order</a>
+    </div>
+</div>

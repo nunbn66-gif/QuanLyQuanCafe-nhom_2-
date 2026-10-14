@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Đăng nhập";
+}
+<div class="container mt-5" style="max-width:450px">
+    <h2 class="mb-3 text-center">Đăng nhập hệ thống</h2>
+    <form asp-controller="Auth" asp-action="Login" method="post">
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label class="form-label">Tên đăng nhập</label>
+            <input type="text" name="tenDangNhap" value="@ViewBag.TenDangNhap" class="form-control" autocomplete="username" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mật khẩu</label>
+            <input type="password" name="matKhau" class="form-control" autocomplete="current-password" />
+        </div>
+        <div class="form-check mb-3">
+            <input type="checkbox" name="ghiNhoTenDangNhap" value="true" class="form-check-input" id="ghiNho" checked="@(ViewBag.GhiNho == true ? "checked" : null)" />
+            <label class="form-check-label" for="ghiNho">Ghi nhớ tên đăng nhập trên thiết bị này</label>
+        </div>
+        <div class="text-center mt-3">
+            Chưa có tài khoản? <a asp-controller="Auth" asp-action="Register">Đăng ký ngay</a>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+    </form>
+</div>

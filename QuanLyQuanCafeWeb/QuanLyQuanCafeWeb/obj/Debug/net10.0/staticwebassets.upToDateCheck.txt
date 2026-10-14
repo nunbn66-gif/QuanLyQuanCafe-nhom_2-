@@ -1,5 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\mon\9b1458365c50434a8a960422b9974a68.jpg
+wwwroot\images\mon\Cà phê sữa.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -61,8 +63,6 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\images\mon\Cà phê sữa.jpg
-wwwroot\images\mon\9b1458365c50434a8a960422b9974a68.jpg
 D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\wwwroot\css\site.css
 D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\wwwroot\favicon.ico
 D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\wwwroot\js\site.js

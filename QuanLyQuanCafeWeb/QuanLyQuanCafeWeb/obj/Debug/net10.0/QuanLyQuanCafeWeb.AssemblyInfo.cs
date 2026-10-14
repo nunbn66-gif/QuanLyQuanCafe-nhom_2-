@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuanLyQuanCafeWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9bb51967eb09be97abaa00cd048750837d6a4f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuanLyQuanCafeWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuanLyQuanCafeWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

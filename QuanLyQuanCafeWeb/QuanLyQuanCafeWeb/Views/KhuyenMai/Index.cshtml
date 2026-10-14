@@ -1,0 +1,59 @@
+﻿@model IEnumerable<QuanLyQuanCafeWeb.Models.Mon>
+@{
+    ViewData["Title"] = "Quản lý khuyến mãi";
+    var now = DateTime.Now;
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Quản lý khuyến mãi</h2>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    <form asp-action="Index" method="get" class="row g-2 mb-3">
+        <div class="col-md-6">
+            <input type="text" name="tuKhoa" value="@ViewBag.TuKhoa" class="form-control" placeholder="Tìm tên món..." />
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            <a asp-action="Index" class="btn btn-secondary">Xóa lọc</a>
+        </div>
+    </form>
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+            <tr><th>Tên món</th><th>Giá gốc</th><th>Giảm giá</th><th>Giá sau giảm</th><th>Thời gian áp dụng</th><th>Trạng thái</th><th>Thao tác</th></tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var mon in Model)
+                {
+                    var dangApDung = mon.PhanTramGiam > 0 && (!mon.NgayBatDauKhuyenMai.HasValue || mon.NgayBatDauKhuyenMai.Value <= now) && (!mon.NgayKetThucKhuyenMai.HasValue || mon.NgayKetThucKhuyenMai.Value >= now);
+                    var giaSauGiam = dangApDung ? mon.GiaBan * (1 - mon.PhanTramGiam / 100m) : mon.GiaBan;
+                    <tr>
+                        <td>@mon.TenMon</td>
+                        <td>@mon.GiaBan.ToString("N0") đ</td>
+                        <td>@mon.PhanTramGiam.ToString("0.##")%</td>
+                        <td>@giaSauGiam.ToString("N0") đ</td>
+                        <td>@(mon.NgayBatDauKhuyenMai?.ToString("dd/MM/yyyy HH:mm") ?? "Không giới hạn") – @(mon.NgayKetThucKhuyenMai?.ToString("dd/MM/yyyy HH:mm") ?? "Không giới hạn")</td>
+                        <td>@(dangApDung ? "Đang áp dụng" : mon.PhanTramGiam > 0 ? "Ngoài thời gian áp dụng" : "Không khuyến mãi")</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@mon.MaMon" class="btn btn-warning btn-sm">Thiết lập</a>
+                            @if (mon.PhanTramGiam > 0)
+                            {
+                                <form asp-action="XoaKhuyenMai" method="post" class="d-inline" onsubmit="return confirm('Bạn có chắc muốn gỡ khuyến mãi của món này?');">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@mon.MaMon" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Gỡ</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="7" class="text-center">Không tìm thấy món nào.</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

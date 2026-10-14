@@ -1,0 +1,18 @@
+﻿@model QuanLyQuanCafeWeb.ViewModels.DiemTichLuyVM
+@{
+    ViewData["Title"] = "Điểm tích lũy";
+}
+<div class="container mt-4" style="max-width:650px">
+    <h2 class="mb-3">Điểm tích lũy thành viên</h2>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <p><strong>Họ tên:</strong> @Model.HoTen</p>
+            <p><strong>Tên đăng nhập:</strong> @Model.TenDangNhap</p>
+            <hr />
+            <p>Điểm tích lũy hiện tại</p>
+            <h1 class="text-success">@Model.DiemTichLuy điểm</h1>
+            <p class="text-muted">Theo quy tắc hiện tại, mỗi 10.000đ thanh toán được cộng 1 điểm.</p>
+        </div>
+    </div>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">Về trang chủ</a>
+</div>

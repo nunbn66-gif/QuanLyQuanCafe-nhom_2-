@@ -3,36 +3,148 @@
   "WorkspaceRootPath": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\xemdanhgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\xemdanhgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\taikhoan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\taikhoan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\xemdanhgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\xemdanhgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\viewmodel\\xemdanhgiavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\viewmodel\\xemdanhgiavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\mon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\mon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\moncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\moncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\danhgiamon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\danhgiamon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\danhgiamoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\danhgiamoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\danhmucmon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\danhmucmon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\viewmodel\\danhgiamonitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\viewmodel\\danhgiamonitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\data\\cafedbcontext.calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\data\\cafedbcontext.calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\data\\cafedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\data\\cafedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\TempData\\TempDanhGiaDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyQuanCafeWeb\\TempData\\TempDanhGiaDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\calamvieccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\calamvieccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\filters\\sessionauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\filters\\sessionauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\viewmodel\\calamviecformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\viewmodel\\calamviecformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\calamviec\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\calamviec\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\calamviec\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\calamviec\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\calamviec\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\calamviec\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\tempmodels\\calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\tempmodels\\calamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\order\\addmon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\order\\addmon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\khuyenmai\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\khuyenmai\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\khuyenmaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\khuyenmaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\khuyenmai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\khuyenmai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\models\\khuyenmaieditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\models\\khuyenmaieditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\models\\monkhuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\models\\monkhuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\ban\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\ban\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\taikhoan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\taikhoan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\ban\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\ban\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\bancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\bancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\taikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\taikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\ban\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\ban\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\diemtichluy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\diemtichluy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\ban\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\ban\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\controllers\\diemtichluycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\controllers\\diemtichluycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\viewmodel\\diemtichluyvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\viewmodel\\diemtichluyvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|d:\\net\\do_an\\quanlyquancafeweb\\quanlyquancafeweb\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{514DEA0D-C8BA-5C31-3859-37FAD3B7219C}|QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb.csproj|solutionrelative:quanlyquancafeweb\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,107 +169,475 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Create.cshtml",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Create.cshtml",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Create.cshtml",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAgwC8AAAAGAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\XemDanhGia\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\XemDanhGia\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\XemDanhGia\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\XemDanhGia\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-12T13:12:54.091Z",
+              "WhenOpened": "2026-10-14T02:55:41.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-12T11:43:48.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaiKhoanController.cs",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwB8AAAAQAAAAAAAAAA==",
+              "Title": "XemDanhGiaVM.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\XemDanhGiaVM.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\ViewModel\\XemDanhGiaVM.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\XemDanhGiaVM.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\ViewModel\\XemDanhGiaVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T11:40:37.678Z",
+              "WhenOpened": "2026-10-14T02:55:19.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Delete.cshtml",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Ban\\Delete.cshtml",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Delete.cshtml",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Ban\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-12T11:30:25.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Edit.cshtml",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Ban\\Edit.cshtml",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Edit.cshtml",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Ban\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-12T11:03:40.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Create.cshtml",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Ban\\Create.cshtml",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Create.cshtml",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Ban\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-12T10:41:10.295Z",
+              "DocumentIndex": 1,
+              "Title": "XemDanhGiaController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\XemDanhGiaController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\XemDanhGiaController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\XemDanhGiaController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\XemDanhGiaController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T02:54:35.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Index.cshtml",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Ban\\Index.cshtml",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Ban\\Index.cshtml",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Ban\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAABDAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Mon\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Mon\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Mon\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Mon\\Index.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowEUAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-12T09:23:40.552Z",
+              "WhenOpened": "2026-10-14T00:23:12.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MonController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\MonController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\MonController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\MonController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\MonController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAswDQAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T02:26:36.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\DanhGiaMon\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\DanhGiaMon\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\DanhGiaMon\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\DanhGiaMon\\Index.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T01:57:53.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\DanhMucMon\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\DanhMucMon\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\DanhMucMon\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\DanhMucMon\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T01:56:43.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DanhGiaMonController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\DanhGiaMonController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\DanhGiaMonController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\DanhGiaMonController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\DanhGiaMonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T01:55:57.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DanhGiaMonItemVM.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\DanhGiaMonItemVM.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\ViewModel\\DanhGiaMonItemVM.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\DanhGiaMonItemVM.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\ViewModel\\DanhGiaMonItemVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T01:55:36.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CafeDbContext.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Data\\CafeDbContext.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Data\\CafeDbContext.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Data\\CafeDbContext.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Data\\CafeDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T01:52:46.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BanController.cs",
-              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\BanController.cs",
-              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\BanController.cs",
-              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\BanController.cs",
-              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\BanController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwGMAAAAoAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowD0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:41:13.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TempDanhGiaDbContext.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\TempData\\TempDanhGiaDbContext.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\TempData\\TempDanhGiaDbContext.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\TempData\\TempDanhGiaDbContext.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\TempData\\TempDanhGiaDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T08:00:43.334Z",
+              "WhenOpened": "2026-10-14T01:50:32.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\CaLamViec\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\CaLamViec\\Edit.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\CaLamViec\\Edit.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\CaLamViec\\Edit.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T00:57:01.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\CaLamViec\\Create.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\CaLamViec\\Create.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\CaLamViec\\Create.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\CaLamViec\\Create.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwCYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T00:56:39.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CafeDbContext.CaLamViec.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Data\\CafeDbContext.CaLamViec.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Data\\CafeDbContext.CaLamViec.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Data\\CafeDbContext.CaLamViec.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Data\\CafeDbContext.CaLamViec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T00:53:06.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SessionAuthorizeAttribute.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Filters\\SessionAuthorizeAttribute.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Filters\\SessionAuthorizeAttribute.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Filters\\SessionAuthorizeAttribute.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Filters\\SessionAuthorizeAttribute.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T01:30:18.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\CaLamViec\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\CaLamViec\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\CaLamViec\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\CaLamViec\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEIAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T00:56:11.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CaLamViecController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\CaLamViecController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\CaLamViecController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\CaLamViecController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\CaLamViecController.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAvwLQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T00:55:44.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CaLamViecFormVM.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\CaLamViecFormVM.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\ViewModel\\CaLamViecFormVM.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\CaLamViecFormVM.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\ViewModel\\CaLamViecFormVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T00:55:07.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CaLamViec.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\TempModels\\CaLamViec.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\TempModels\\CaLamViec.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\TempModels\\CaLamViec.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\TempModels\\CaLamViec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T00:50:31.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddMon.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Order\\AddMon.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Order\\AddMon.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Order\\AddMon.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Order\\AddMon.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T00:23:19.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Edit.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Edit.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:40:51.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\KhuyenMai\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:40:19.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "KhuyenMaiController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\KhuyenMaiController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\KhuyenMaiController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\KhuyenMaiController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\KhuyenMaiController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowB4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T20:39:37.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "KhuyenMaiEditVM.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Models\\KhuyenMaiEditVM.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Models\\KhuyenMaiEditVM.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Models\\KhuyenMaiEditVM.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Models\\KhuyenMaiEditVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T20:39:09.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MonKhuyenMai.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Models\\MonKhuyenMai.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Models\\MonKhuyenMai.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Models\\MonKhuyenMai.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Models\\MonKhuyenMai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T20:35:23.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAwGYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T19:19:44.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Order\\Details.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:44:01.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Delete.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Delete.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:28:16.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:26:36.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Edit.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Edit.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\TaiKhoan\\Edit.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:26:21.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TaiKhoanController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\TaiKhoanController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwGcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T20:26:02.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\DiemTichLuy\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\DiemTichLuy\\Index.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\DiemTichLuy\\Index.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\DiemTichLuy\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:18:26.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DiemTichLuyController.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\DiemTichLuyController.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Controllers\\DiemTichLuyController.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Controllers\\DiemTichLuyController.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Controllers\\DiemTichLuyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T20:17:40.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DiemTichLuyVM.cs",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\DiemTichLuyVM.cs",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\ViewModel\\DiemTichLuyVM.cs",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\ViewModel\\DiemTichLuyVM.cs",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\ViewModel\\DiemTichLuyVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T20:17:04.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "QuanLyQuanCafeWeb\\Views\\Order\\Create.cshtml",
+              "ToolTip": "D:\\net\\Do_an\\QuanLyQuanCafeWeb\\QuanLyQuanCafeWeb\\Views\\Order\\Create.cshtml",
+              "RelativeToolTip": "QuanLyQuanCafeWeb\\Views\\Order\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:10:22.951Z",
               "EditorCaption": ""
             }
           ]

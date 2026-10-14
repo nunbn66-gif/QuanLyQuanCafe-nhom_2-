@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Gộp bàn";
+}
+<div class="container mt-4" style="max-width:650px">
+    <h2 class="mb-3">Gộp bàn</h2>
+    <div class="alert alert-info">Bàn nguồn: <strong>@ViewBag.TenBanNguon</strong> — Order #@ViewBag.MaOrderNguon</div>
+    <p>Chọn Order đích đang hoạt động. Các món của Order nguồn sẽ được chuyển sang Order đích.</p>
+    <form asp-action="GopBan" asp-route-id="@ViewBag.MaOrderNguon" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="id" value="@ViewBag.MaOrderNguon" />
+        <div class="mb-3">
+            <label class="form-label">Order đích</label>
+            <select name="maOrderDich" asp-items="ViewBag.OrderDichList" class="form-select" required>
+                <option value="">-- Chọn Order và bàn đích --</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="return confirm('Bạn có chắc muốn gộp Order nguồn vào Order đích?');">Xác nhận gộp bàn</button>
+        <a asp-action="Details" asp-route-id="@ViewBag.MaOrderNguon" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

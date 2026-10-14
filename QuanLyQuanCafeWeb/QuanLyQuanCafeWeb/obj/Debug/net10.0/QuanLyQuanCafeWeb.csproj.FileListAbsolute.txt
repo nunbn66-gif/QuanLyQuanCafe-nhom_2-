@@ -230,3 +230,4 @@ D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\bin\Debug\net10.0\runtimes\win-
 D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
 D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\obj\Debug\net10.0\QuanLyQuanCafeWeb.csproj.AssemblyReference.cache
+D:\net\Do_an\QuanLyQuanCafeWeb\QuanLyQuanCafeWeb\obj\Debug\net10.0\QuanLyQuanCafeWeb.sourcelink.json
